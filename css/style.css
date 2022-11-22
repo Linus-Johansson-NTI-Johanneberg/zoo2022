@@ -1,0 +1,57 @@
+#wrapper {
+    display: grid;
+    margin: auto;
+    height: 90vh;
+    /*background-color: black;*/
+    margin: auto;
+    /*text-decoration-color: white;*/
+    grid-template-areas:
+    "tb"
+    "."
+    "cn"
+    "."
+    "ft"
+}
+
+#top_bar {
+    grid-area: tb;
+    display: grid;
+    grid-template-areas: 
+    "hd nv"
+    ;
+}
+
+header {
+    grid-area: hd;
+}
+
+nav{
+    grid-area: nv;
+}
+
+#content {
+    grid-area: cn;
+    display: grid;
+    grid-template-areas: 
+    "s1 s2 s3"
+    ;
+}
+
+    #section1{
+        grid-area: s1;
+        text-align: center
+    }
+
+    #section2{
+        grid-area: s2;
+        text-align: center
+    }
+
+    #section3{
+        grid-area: s3;
+        text-align: center
+    }
+
+footer {
+    grid-area: ft;
+}
