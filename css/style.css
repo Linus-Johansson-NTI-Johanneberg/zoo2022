@@ -1,16 +1,31 @@
+body{
+background-color: black;
+}
+
 #wrapper {
     display: grid;
-    margin: auto;
-    height: 90vh;
-    /*background-color: black;*/
-    margin: auto;
-    /*text-decoration-color: white;*/
+    margin: 0;
+    padding: 0;
     grid-template-areas:
     "tb"
     "."
     "cn"
     "."
-    "ft"
+    "ft";
+
+}
+
+a{
+    text-decoration-line: none;
+    color: white;
+}
+
+a span {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+    color: white;
 }
 
 #top_bar {
@@ -18,26 +33,34 @@
     display: grid;
     grid-template-areas: 
     "hd nv";
-    border: 2px solid gray;
-    grid-template-columns: 1fr 2fr;
+    border-bottom: 2px solid rgb(98, 98, 98);
+    grid-template-columns: 1fr 5fr;
+    height: fit-content;
+    /*background-color: #af008f;*/
 
+    font-size:1.7rem;
+    /*border: 2px solid gray;*/
 }
 
     header {
         grid-area: hd;
-        border: 2px solid gray; 
+        /*border: 2px solid gray; */
         display: flex;
-            justify-content: center;
-            align-items: center;
+            /*justify-content: center;
+            align-items: center;*/
     }
 
         #image_logo{
-            width: 100px;
+            height: 100px;
         }
+
+        /*img.hover{
+            
+        }*/
 
     nav{
         grid-area: nv;
-        border: 2px solid gray;
+        /*border: 2px solid gray;*/
         text-align: center;
         /*grid-template-areas: "hm tp ab";
         column-gap: 50px;*/
@@ -61,34 +84,76 @@
     border: 2px solid gray;
 }*/
 
+#home_text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10vh;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+#lorem {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
 #content {
     grid-area: cn;
     display: grid;
+    /*padding-inline:10vh ;*/
     grid-template-areas: 
     "s1 s2 s3"
     ;
-    border: 2px solid gray;
+    /*border: 2px solid gray;*/
+    height: fit-content;
+    display: flex;
+    justify-content:space-evenly
 }
 
     #section1{
         grid-area: s1;
         text-align: center;
         border: 2px solid gray;
+        display: block;
+        height: 25vh;
+        width: 35vh;
     }
 
     #section2{
         grid-area: s2;
         text-align: center;
         border: 2px solid gray;
+        display: block;
+        height: 25vh;
+        width: 35vh;
     }
 
     #section3{
         grid-area: s3;
         text-align: center;
         border: 2px solid gray;
+        display: block;
+        height: 25vh;
+        width: 35vh;
+        
     }
 
 footer {
     grid-area: ft;
-    border: 2px solid gray;
+    border-top: 2px solid white;
 }
+
+/*css reset*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    font-size: 100%; 
+    font: inherit; 
+    vertical-align: baseline;
+  } 
+  
+.font-soleto-xbold { font-family: 'Soleto XBold'; }
