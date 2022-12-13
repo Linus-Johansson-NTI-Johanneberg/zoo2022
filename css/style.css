@@ -4,15 +4,13 @@ background-color: black;
 
 #wrapper {
     display: grid;
-    margin: 0;
+    margin-top: 50px;
     padding: 0;
     grid-template-areas:
-    "tb"
-    "."
+    "ht"
     "cn"
     "."
     "ft";
-
 }
 
 a{
@@ -20,7 +18,7 @@ a{
     color: white;
 }
 
-a span {
+a span{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -33,11 +31,14 @@ p{
     display: grid;
     grid-template-areas: 
     "hd nv";
-    border-bottom: 2px solid rgb(98, 98, 98);
+    border-bottom: 2px solid gray;
     grid-template-columns: 1fr 5fr;
     height: fit-content;
     /*background-color: #af008f;*/
-
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: black;
     font-size:1.7rem;
     /*border: 2px solid gray;*/
 }
@@ -87,6 +88,7 @@ p{
 #home_text {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 10vh;
+    grid-area:ht;
 }
 
 #title {
@@ -100,6 +102,7 @@ p{
     justify-content: center;
     font-size: 1.5rem;
 }
+
 #content {
     grid-area: cn;
     display: grid;
@@ -138,12 +141,14 @@ p{
         display: block;
         height: 25vh;
         width: 35vh;
-        
     }
 
 footer {
     grid-area: ft;
-    border-top: 2px solid white;
+    margin-top: 5vh;
+    border: 2vh solid lime;
+    height: 20vh;
+    background-color: #4B0082;
 }
 
 /*css reset*/
